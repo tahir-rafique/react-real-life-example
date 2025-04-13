@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive-Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <nav>
+      <!-- Navbar -->
+      <ul>
+        <li><a href="#">Tahir</a></li>
+        <li class="hideOnMobile"><a href="#">Blog</a></li>
+        <li class="hideOnMobile"><a href="#">Product</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Login</a></li>
+        <li class="menu-btn" onclick="showSidebar()">
+          <a href="#"><img src="./images/menu.svg" alt="no" /></a>
+        </li>
+      </ul>
+
+      <!-- Tablets & Mobile Sidebar -->
+      <ul class="sidebar">
+        <li  onclick="hideSidebar()">
+          <a href="#"><img src="./images/close.svg" alt="no" /></a>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
